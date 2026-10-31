@@ -15,13 +15,13 @@
 
 ## 使用方法
 
-以 root 登录后执行以下命令，将 `YOUR_USERNAME`、`YOUR_REPOSITORY` 替换为 GitHub 用户名和仓库名（分支不是 `main` 时也需替换）：
+以 root 登录后执行以下命令：
 
 ```bash
 apt-get update
 apt-get install -y curl ca-certificates cron
 systemctl enable --now cron
-curl -fL "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/gost-install.sh" -o gost-install.sh && bash gost-install.sh
+curl -fL "https://raw.githubusercontent.com/wjg0328/gost-easy-deploy/main/gost-install.sh" -o gost-install.sh && bash gost-install.sh
 ```
 
 执行后，按提示依次输入：
